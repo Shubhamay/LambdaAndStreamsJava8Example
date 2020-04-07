@@ -1,4 +1,4 @@
-package com.company;
+package com.company.javabrains;
 
 import java.util.*;
 import java.util.function.Consumer;

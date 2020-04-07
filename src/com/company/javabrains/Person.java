@@ -1,4 +1,4 @@
-package com.company;
+package com.company.javabrains;
 
 public class Person {
     public Person(String firstName, String lastName, int age) {

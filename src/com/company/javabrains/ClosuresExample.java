@@ -1,4 +1,4 @@
-package com.company;
+package com.company.javabrains;
 
 public class ClosuresExample {
     public static void main(String[] args) {
