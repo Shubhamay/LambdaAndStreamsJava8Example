@@ -26,6 +26,10 @@ public class StreamsExamples {
                 .limit(4)
                 .forEach(p -> System.out.println(p.getFirstName()));
 
+        people.parallelStream()
+                .filter(p -> p.getLastName().startsWith("A"))
+                .forEach(p -> System.out.println(p.getFirstName()));
+
         people.stream();
     }
 }
