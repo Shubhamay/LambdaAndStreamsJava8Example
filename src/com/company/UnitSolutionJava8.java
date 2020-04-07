@@ -20,13 +20,14 @@ public class UnitSolutionJava8   {
        Collections.sort(people, (Person p1, Person p2) ->  p1.getLastName().compareTo(p2.getLastName()));
 
         //Create a method that prints all the element in the list
-        printConditionally(people, (Person p) -> true, p -> System.out.println(p));
+//        printConditionally(people, (Person p) -> true, p -> System.out.println(p));
 
         //Create a method that prints all people last name start with C
-        printConditionally(people, (Person p) -> p.getLastName().startsWith("C"), p -> System.out.println(p));
+//        printConditionally(people, (Person p) -> p.getLastName().startsWith("C"), p -> System.out.println(p));
+        printConditionally(people, (p) -> true, System.out::println);
 
         //Create a method that prints all people last name start with C and only first name
-        printConditionally(people, (Person p) -> p.getLastName().startsWith("C"), p -> System.out.println(p.getFirstName()));
+//        printConditionally(people, (Person p) -> p.getLastName().startsWith("C"), p -> System.out.println(p.getFirstName()));
     }
 
     private static void printConditionally(List<Person> personList, Predicate<Person> predicate, Consumer<Person> consumer) {
